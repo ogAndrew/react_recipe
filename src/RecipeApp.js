@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import Recipe from './Recipe';
+import Navbar from './NavBar'
+import RecipeList from './RecipeList';
 import './RecipeApp.css';
 
 class RecipeApp extends Component {
   render() {
     return (
       <div className="App">
-        <Recipe title='pasta'
-         ingredients={['flour', 'water ']} 
-         instructions="Mix Ingredients"
-         img="spaghetti.jpg"
-         />
+        <Navbar />
+        <RecipeList />
       </div>
     );
   }
